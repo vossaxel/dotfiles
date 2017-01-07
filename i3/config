@@ -134,8 +134,8 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 for_window [class="Spotify"] move to workspace $ws9
-for_window [class="Franz"] $ws8
-for_window [class="crx_hmjkmjkepdijhoojdojkdfohbdgmmhki"] move scratchpad
+for_window [class="Franz"] move to workspace $ws8
+for_window [class="crx_hmjkmjkepdijhoojdojkdfohbdgmmhki"] move to scratchpad
 
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -258,5 +258,6 @@ bindsym $mod+n exec --no-startup-id /opt/google/chrome/google-chrome --profile-d
 
 # exec --no-startup-id spotify
 exec --no-startup-id franz
+exec --no-startup-id /opt/google/chrome/google-chrome --profile-directory=Default --app-id=hmjkmjkepdijhoojdojkdfohbdgmmhki
 exec --no-startup-id compton
 exec_always --no-startup-id feh --bg-scale /home/h4xx3l/Pictures/Wallpapers/simpledesktops.com.png
